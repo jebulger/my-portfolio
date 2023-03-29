@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/reset.css"/>
     <link rel="stylesheet" href="./assets/style.css"/>
 </head>
+
 <body>
     <!-- Header within the body for my name and nav links -->
     <header>
@@ -19,28 +20,77 @@
             <ul class="list">
                 <li>
                     <!-- Adds link to the about me section -->
-                    <a href="About Me">About Me</a>
+                    <a href="#About Me">About Me</a>
                 </li>
                 <li>
                     <!-- Adds link to the work section -->
-                    <a href="Work">Work</a>
+                    <a href="#Work">Work</a>
                 </li>
                 <li>
                     <!-- Adds link to the contact me section -->
-                    <a href="Contact Me">Contact Me</a>
+                    <a href="#Contact Me">Contact Me</a>
                 </li>
                 <li>
                     <!-- Adds link to resume section -->
-                    <a href="Resume">Resume</a>
+                    <a href="#">Resume</a>
                 </li>
             </ul>
         </nav>
     </header>
+
     <!-- Section for the background image containing an image of me-->
     <section class="hero">
         <img class="portrait"
         src="./assets/images/image0.jpeg" 
-        alt="Me standing with a coffee cup in my hand, turning my head right to look at the camera."/>
+        alt="Me standing with a coffee cup in my hand, turning my head right to look at the camera.">
     </section>
+
+    <aside class="aside">
+        <section id="About Me">
+            <h2>About Me</h2>
+            <p>Lorem Ipsum</p>
+        </section>
+        <section id="Work">
+            <h2>Work</h2>
+            <div class="flexbox">
+                <div>
+                    <a href="https://jebulger.github.io/module-1-challenge/">
+                        <img class="project"
+                        src="./assets/images/project1.png">
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="#">
+                        <img class="coming-soon"
+                        src="./assets/images/placeholder.jpg">
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="#">
+                        <img class="coming-soon"
+                        src="./assets/images/placeholder.jpg">
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="#">
+                        <img class="coming-soon"
+                        src="./assets/images/placeholder.jpg">
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="#">
+                        <img class="coming-soon"
+                        src="./assets/images/placeholder.jpg">
+                    </a>
+                </div>
+            </div>
+            <!-- <p>Lorem Ipsum</p> -->
+        </section>
+        <section id="Contact Me">
+            <h2>Contact Me</h2>
+            <p>Lorem ipsum randomoso</p>
+        </section>
+        <section id="Resume"></section>
+    </aside>
 </body>
 </html>
