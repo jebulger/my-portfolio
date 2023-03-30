@@ -31,16 +31,29 @@ h2 {
     border-right: #28464B solid 5px;
     width: 9em;
     min-width: 9em;
-    margin: 0em .5em 2em .5em;
+    height: auto;
+    margin: 0em 1.5em 2em 1.5em;
     text-align: right;
 }
 
+h3 {
+    text-align:center;
+    margin: 5px;
+    line-height: 1.2em;
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
 aside {
-    margin: 1em 2em 2em 2em;
+    margin: 1em 2em 2em 1em;
 }
 
 p {
     margin-left: 1em;
+    line-height: 1.5em;
 }
 
 div img {
@@ -92,7 +105,6 @@ a {
 .aside section {
     display: flex;
     margin-bottom: 2em;
-    /* justify-content: first baseline; */
 }
 
 .project {
@@ -103,58 +115,71 @@ a {
 .coming-soon {
     width: 100%;
     height: auto;
-    /* flex-grow: 1; */
-}
-
-/* .work {
-    width: 80%;
-    height: auto;
-} */
-
-.flexbox div {
-    width: 100%;
 }
 
 .flexbox {
     display: flex;
     flex-wrap: wrap;
-    /* width: 30em; */
     flex-direction: row;
-    /* width: 100%; */
     justify-content: center;
 }
 
+div.flexbox {
+    flex-grow: 1;
+    width: 66%;
+}
+
 div.work {
-    width: 40%;
+    width: 47%;
     flex-grow: 1;
 }
 
 .flexbox div {
     line-height: 0;
-    margin: .4em;
-    border: #28464B solid 5px;
+    margin: .3em;
+    border: #42D9C8 solid 5px;
 }
 
-/* .work {
-    flex: 0 0 1;
-} */
-
-/* .aside section {
-    min-width: 10em;
-    max-width: 10em;
+ul.contact {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
-
-/* .aside h2 {
-    margin: 0em 1em 5em 1em;
     flex-wrap: wrap;
-} */
+    justify-content: space-between;
+    flex-grow: 1;
+}
 
-@media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
+ul.contact li {
+    margin: 0em 3em 3em 3em;
+    text-align: center;
+    border-bottom: #28464B solid 5px;
+    line-height: 3em;
+}
+
+.contact a {
+    color: #28464B;
+    text-decoration: none;
+}
+
+.text-container {
+    position: relative;
+}
+
+.text-box {
+    width: 20%;
+    height: 20%;
+    left: -.5em;
+    bottom: 50%;
+    position: absolute;
+    background-color: #42D9C8;
+    color: #28464B;
+}
+
+@media screen and (max-width: 1070px) {
+    h3 {
+        font-size: x-small;
+    }
+    h4 {
+        text-align: center;
+        font-size: xx-small;
     }
 }
 
@@ -166,8 +191,19 @@ div.work {
         border-style: none;
         border-bottom: black solid 5px;
     }
+    h3,
+    h4,
+    .text-box {
+        display: none;
+    }
     p {
-        margin-left: 0;
+        margin: 0 1em 0 1em;
+    }
+    aside {
+        margin: 0 0 1em 0;
+    }
+    .flexbox div {
+        flex-grow:1;
     }
     .aside section {
         align-items: center;
