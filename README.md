@@ -16,12 +16,17 @@ All that is required is an internet browser of your choice.
 Open the webpage up in a browser and device of your choice. As you scroll the page you will see a section that contain information about me, a section with my work, and a section with ways to contact me.  
   
 However, there are navigation links at the top of the page that link to the corresponding sections below:
+
 ![](./assets/images/02homework-nav.png)
 
+
 Try hovering over one of the clickable images and you will see their border light up red!
+
 ![](./assets/images/02-hw-hover-display.png)
 
+
 The page is also mobile responsive - try shrinking the page to see how the layout changes with the size of the screen.  
+
 ![](./assets/images/02-hw-mobile-responsive.png)
 
 ## Sidenote
