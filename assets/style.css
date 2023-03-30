@@ -1,3 +1,4 @@
+/* Sets the body's font size and background color. */
 body {
     font-size: 16px;
     background-color: whitesmoke;
@@ -14,6 +15,9 @@ header {
     min-width: fit-content;
 }
 
+/* Styling for my name, setting font size, color, 
+background color, and giving a border radius to
+curve top and bottom right edges. */
 h1 {
     color: #28464B;
     font-size: 2em;
@@ -24,6 +28,7 @@ h1 {
     padding: 0em 1em 0em 2em;
 }
 
+/* Used for titles preceding the content within the aside section */
 h2 {
     font-size: 2em;
     color:#28464B;
@@ -36,6 +41,8 @@ h2 {
     text-align: right;
 }
 
+/* Styles the h3 tags that I used for the text within the boxes
+that appear over the clickable images. */
 h3 {
     text-align:center;
     margin: 5px;
@@ -43,22 +50,24 @@ h3 {
     font-size: 1.5em;
 }
 
+/* Styles the h4 tags that I used for the text within the boxes
+that appear over the clickable images. */
 h4 {
+    text-align: center;
     font-size: 1em;
 }
 
+/* Used to push page content in */
 aside {
-    margin: 1em 2em 2em 1em;
+    /* margin: 1em 2em 2em 1em; */
+    margin: 1vh 2vh 2vh 1vh;
 }
 
+/* Setting some styling ground rules for p tags found within 
+the page. */
 p {
     margin-left: 1em;
     line-height: 1.5em;
-}
-
-div img {
-    width: fit-content;
-    height: auto;
 }
 
 /* Adds space between list items */
@@ -68,14 +77,32 @@ div img {
     justify-content: space-between;
 }
 
+/* Used to add some space between nav items */
 .list li {
     margin-right: 2em;
 }
 
+/* Sets the color of my nav links */
 a {
     color: #42D9C8;
 }
 
+/* Used to create style the welcome to my site banner
+over the background image of the parent section */
+.hero p {
+    bottom: 20%;
+    left: 60%;
+    font-size: 1.8em;
+    text-align: center;
+    width: 33vw;
+    height: fit-content;
+    position: absolute;
+    background-color: #42D9C8;
+    border-radius: 1em;
+}
+
+/* Sets the section to display the background image
+and some styling to fit it on page. */
 .hero {
     position: relative;
     width: 100%;
@@ -87,6 +114,7 @@ a {
     background-attachment: fixed;
 }
 
+/* styling for the image of me */
 .portrait {
     position: relative;
     top: 2.3em;
@@ -96,27 +124,34 @@ a {
     height: auto;
 }
 
+/* styling for the aside section that I meant to originally name
+the main section. */
 .aside {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
+/* Sets display to flex for the sections within the aside,
+moving the sections to the side of the aside */
 .aside section {
     display: flex;
     margin-bottom: 2em;
 }
 
+/* Tells the image of my first project to take up all the space available */
 .project {
     width: 100%;
     height: auto;
 }
 
+/* Tells the coming soon images to take up all available space. */
 .coming-soon {
     width: 100%;
     height: auto;
 }
 
+/* Used as a container for my project images */
 .flexbox {
     display: flex;
     flex-wrap: wrap;
@@ -124,15 +159,24 @@ a {
     justify-content: center;
 }
 
+/* adds a margin to the flexbox container of the project images 
+and tells the container to grow to fill available space */
 div.flexbox {
+    margin: 0 10px 0 10px;
     flex-grow: 1;
-    width: 66%;
+    /* width: 66%; */
+    /* width: 64%; */
 }
 
+/* Assigns a relative position for the text boxes and caps the
+width of the coming soon images to only take up 46% of available space.
+Thus allowing my first project image to display a larger size. */
 div.work {
-    width: 47%;
+    position: relative;
+    width: 46%;
     flex-grow: 1;
 }
+
 
 .flexbox div {
     line-height: 0;
@@ -163,6 +207,14 @@ ul.contact li {
     position: relative;
 }
 
+.text-container:hover{
+    box-shadow: inset 0px 0px 8px rgb(255, 0, 0), 0 0 15px rgb(255, 0, 0)
+}
+
+.work:hover {
+    box-shadow: inset 0px 0px 8px rgb(255, 0, 0), 0 0 15px rgb(255, 0, 0);
+}
+
 .text-box {
     width: 20%;
     height: 20%;
@@ -173,17 +225,30 @@ ul.contact li {
     color: #28464B;
 }
 
+.work p {
+    position: absolute;
+    bottom: 40%;
+    margin-left: 0;
+    padding: 1vh;
+    width: fit-content;
+    height: auto;
+    background-color:#42D9C8;
+}
+
 @media screen and (max-width: 1070px) {
     h3 {
         font-size: x-small;
     }
     h4 {
-        text-align: center;
+        /* text-align: center; */
         font-size: xx-small;
+    }
+    .flexbox div {
+        line-height: 0;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     h2 {
         font-size: 1.5em;
         align-self: center;
@@ -198,6 +263,9 @@ ul.contact li {
     }
     p {
         margin: 0 1em 0 1em;
+    }
+    .work p, .hero p {
+        display: none;
     }
     aside {
         margin: 0 0 1em 0;

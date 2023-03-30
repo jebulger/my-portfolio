@@ -31,21 +31,30 @@
                     <a href="#Contact Me">Contact Me</a>
                 </li>
                 <li>
-                    <!-- Adds link to resume section -->
+                    <!-- I don't have a resume, for now the link
+                    just goes back to the top of the page.-->
                     <a href="#">Resume</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <!-- Section for the background image containing an image of me-->
+    <!-- Section for the background image containing an image of me
+    and a welcome message over top-->
     <section class="hero">
         <img class="portrait"
         src="./assets/images/image0.jpeg" 
         alt="Me standing with a coffee cup in my hand, turning my head right to look at the camera.">
+        <p>Welcome to My Site!</p>
     </section>
-
+    <!-- Originally meant to name this section main, but a bit far in now.
+    This aside section contains the sections within the main content of the page -->
+    <!-- My issue was trying to style these sections as I went along making the
+    html layout. Next time, I will try making the page layout first
+    so that I can get a better understanding of what classes Ill be needing
+    to assign. -->
     <aside class="aside">
+        <!-- Sections given id to give a tags a destination -->
         <section id="About Me">
             <h2>About Me</h2>
             <p>
@@ -56,6 +65,8 @@
                 my surprise, its ever-growing tattoo scene. I love it so
                 much, I acutally ended up working at a tattoo shop downtown
                 for a long while. 
+                <!-- These are line breaks for making the text
+                a bit easier on the eyes. -->
                 <br>
                 <br>
                 As much as I enjoy tattoos, I am equally 
@@ -63,7 +74,7 @@
                 at a mechanic shop. Currently in the process
                 of modifying my Focus St, and it has been fun. However,
                 my favorite hobby is without a doubt music. Concerts,
-                live music, streaming, kareoke, I have a fondness for
+                live music, streaming, karaoke, I have a fondness for
                 everything about it.
                 <br>
                 <br>
@@ -72,17 +83,24 @@
                 Chapel Hill. So far it has been great. There is a seemingly
                 endless amount to learn with coding. Which means there is
                 always room to improve, which is the coolest thing about it. 
-                With this class, my goal is to gain a good foundation, then
-                continue to hone it throughout my life.
+                With this class, my goal is to develop a good coding foundation, 
+                then continue to hone it throughout my life.
             </p>
         </section>
         <section id="Work">
             <h2>Work</h2>
+            <!-- Used this div for the flexbox container -->
             <div class="flexbox">
+                <!-- Used this div as container for the text 
+                boxes that appear over the clickable images 
+                to assign a relative position -->
                 <div class="text-container">
                     <a href="https://jebulger.github.io/module-1-challenge/">
+                        <!-- Assigned image class for styling -->
                         <img class="project"
-                        src="./assets/images/project1.png">
+                        src="./assets/images/project1.png"
+                        alt="My first project">
+                        <!-- Assigned class for styling -->
                         <div class="text-box">
                             <h3>Horiseon</h3>
                             <h4>Project 1</h4>
@@ -90,39 +108,45 @@
                     </a>
                 </div>
                 <div class="work">
-                    <a class="text-container"
-                    href="#">
+                    <!-- I don't have any other work so for now
+                    the rest of the coming soon images link to the
+                    top of the page -->
+                    <a href="#">
                         <img class="coming-soon"
                         src="./assets/images/placeholder.jpg">
                     </a>
+                    <p>Coming Soon!</p>
                 </div>
                 <div class="work">
-                    <a class="text-container" 
-                    href="#">
+                    <a href="#">
                         <img class="coming-soon"
                         src="./assets/images/placeholder.jpg">
                     </a>
+                    <p>Coming Soon!</p>
                 </div>
                 <div class="work">
-                    <a class="text-container"
-                    href="#">
+                    <a href="#">
                         <img class="coming-soon"
                         src="./assets/images/placeholder.jpg">
                     </a>
+                    <p>Coming Soon!</p>
                 </div>
                 <div class="work">
-                    <a class="text-container"
-                    href="#">
+                    <a href="#">
                         <img class="coming-soon"
                         src="./assets/images/placeholder.jpg">
                     </a>
+                    <p>Coming Soon!</p>
                 </div>
             </div>
-            <!-- <p>Lorem Ipsum</p> -->
         </section>
+        <!-- Contains the contact me section, I used an unordered
+        list for the ways to contact me. The list items contain a
+        link within to the method of contact. -->
         <section id="Contact Me">
             <h2>Contact Me</h2>
             <ul class="contact">
+                <!-- Not using my real phone number, here is placeholder -->
                 <li>777.777.7777</li>
                 <li>
                     <a href="mailto:jebulger1003@gmail.com">jebulger1003@gmail.com</a>
@@ -131,10 +155,14 @@
                     <a href="https://github.com/jebulger">Github</a>
                 </li>
                 <li>
+                    <!-- I don't use any social media, here is a placeholder
+                    to twitter's main webpage. -->
                     <a href="https://twitter.com/?lang=en">Twitter</a>
                 </li>
             </ul>
         </section>
+        <!-- Soon will link to actual resume, for now just google as 
+            a placeholder -->
         <section id="Resume"></section>
     </aside>
 </body>
