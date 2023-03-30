@@ -164,8 +164,6 @@ and tells the container to grow to fill available space */
 div.flexbox {
     margin: 0 10px 0 10px;
     flex-grow: 1;
-    /* width: 66%; */
-    /* width: 64%; */
 }
 
 /* Assigns a relative position for the text boxes and caps the
@@ -173,17 +171,19 @@ width of the coming soon images to only take up 46% of available space.
 Thus allowing my first project image to display a larger size. */
 div.work {
     position: relative;
-    width: 46%;
+    width: 47%;
     flex-grow: 1;
 }
 
-
+/* I used line height to get rid of a gap between the clickable
+images and their border and added a border */
 .flexbox div {
     line-height: 0;
     margin: .3em;
     border: #42D9C8 solid 5px;
 }
 
+/* Used to move the contact list into rows */
 ul.contact {
     display: flex;
     flex-wrap: wrap;
@@ -191,6 +191,7 @@ ul.contact {
     flex-grow: 1;
 }
 
+/* Spaces out the list items within the list */
 ul.contact li {
     margin: 0em 3em 3em 3em;
     text-align: center;
@@ -198,23 +199,26 @@ ul.contact li {
     line-height: 3em;
 }
 
+/* Removes the link underline, as I have set a border instead */
 .contact a {
     color: #28464B;
     text-decoration: none;
 }
 
+/* Used to set relative position for the text box over my first
+project image */
 .text-container {
     position: relative;
 }
 
-.text-container:hover{
+/* Lights up the clickable images when the user is hovering over. */
+.text-container:hover,
+.work:hover {
     box-shadow: inset 0px 0px 8px rgb(255, 0, 0), 0 0 15px rgb(255, 0, 0)
 }
 
-.work:hover {
-    box-shadow: inset 0px 0px 8px rgb(255, 0, 0), 0 0 15px rgb(255, 0, 0);
-}
-
+/* Used to style the text box that is layed over top
+my first project image. */
 .text-box {
     width: 20%;
     height: 20%;
@@ -225,6 +229,7 @@ ul.contact li {
     color: #28464B;
 }
 
+/* Used to style text boxes over the coming soon images */
 .work p {
     position: absolute;
     bottom: 40%;
@@ -235,12 +240,14 @@ ul.contact li {
     background-color:#42D9C8;
 }
 
+/* For mobile responsiveness
+In particular this prevents the text boxes over the work images
+from overflowing */
 @media screen and (max-width: 1070px) {
     h3 {
         font-size: x-small;
     }
     h4 {
-        /* text-align: center; */
         font-size: xx-small;
     }
     .flexbox div {
@@ -248,13 +255,17 @@ ul.contact li {
     }
 }
 
+/* For mobile responsiveness
+again preventing overflow of items within the page
+by hiding the text boxes over the work images.
+Also changes border of the section h tags to the bottom */
 @media screen and (max-width: 767px) {
     h2 {
         font-size: 1.5em;
         align-self: center;
         text-align: center;
         border-style: none;
-        border-bottom: black solid 5px;
+        border-bottom: #28464B solid 5px;
     }
     h3,
     h4,
