@@ -173,6 +173,7 @@ div.work {
     position: relative;
     width: 47%;
     flex-grow: 1;
+    background-color: black;
 }
 
 /* I used line height to get rid of a gap between the clickable
@@ -238,6 +239,11 @@ my first project image. */
     width: fit-content;
     height: auto;
     background-color:#42D9C8;
+}
+
+.coming-soon-alt {
+    height: 1000px;
+    width: 1000px;
 }
 
 /* For mobile responsiveness
