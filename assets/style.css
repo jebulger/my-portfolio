@@ -173,7 +173,6 @@ div.work {
     position: relative;
     width: 47%;
     flex-grow: 1;
-    background-color: transparent;
 }
 
 /* I used line height to get rid of a gap between the clickable
